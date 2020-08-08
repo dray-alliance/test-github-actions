@@ -1,0 +1,17 @@
+name: Merge any release branch to develop
+on:
+  push:
+    branches:
+      - 'release/*'
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Merge release -> develop
+        uses: devmasx/merge-branch@v1.3.0
+        with:
+          type: now
+          target_branch: develop
+          github_token: ${{ github.token }}
