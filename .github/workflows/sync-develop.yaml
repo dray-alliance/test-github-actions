@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Merge release -> develop
-        uses: devmasx/merge-branch@v1.3.0
+        uses: devmasx/merge-branch@v1.1.0
         with:
           type: now
           target_branch: develop
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
