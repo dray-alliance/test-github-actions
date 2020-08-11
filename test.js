@@ -4,5 +4,5 @@ const string = 'Hello World';
 if (x) {
   console.log(string);
 } else {
-  console.log('false');
+  console.log('some test');
 }
