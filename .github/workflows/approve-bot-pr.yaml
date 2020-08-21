@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Approve pull request
         uses: andrewmusgrave/automatic-pull-request-review@0.0.2
-        if: ":crown: *Automated PR*" == ${{ github.event.pull_request.body }}
+        if: "*Automated PR*" == ${{ github.event.pull_request.body }}
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           event: APPROVE
