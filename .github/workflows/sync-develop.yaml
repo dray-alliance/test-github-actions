@@ -18,4 +18,4 @@ jobs:
         pr_title: "Bot: Merge ${{ github.ref }} into master" # Title of pull request
         pr_body: ":crown: *Automated PR* ${{github.actor}}"              # Full markdown support, requires pr_title to be set
         pr_label: "auto-pr"                               # Comma-separated list (no spaces)
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: '${{ secrets.ACCESS_TOKEN }}'
