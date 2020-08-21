@@ -1,5 +1,6 @@
 console.log('Hello world');
 const x = false;
+const y = true;
 const string = 'Hello World';
 
 if (x) {
