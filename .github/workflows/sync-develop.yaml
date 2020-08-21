@@ -15,7 +15,7 @@ jobs:
       with:
         source_branch: ""                                 # If blank, default: triggered branch
         destination_branch: "develop"                      # If blank, default: master
-        pr_title: "Bot: Merge ${{ github.ref }} into master" # Title of pull request
-        pr_body: ":crown: *Automated PR* ${{github.actor}}"              # Full markdown support, requires pr_title to be set
+        pr_title: "Bot: Merge ${{ github.ref }} into develop" # Title of pull request
+        pr_body: ":crown: *Automated PR*"              # Full markdown support, requires pr_title to be set
         pr_label: "auto-pr"                               # Comma-separated list (no spaces)
         github_token: '${{ secrets.ACCESS_TOKEN }}'
