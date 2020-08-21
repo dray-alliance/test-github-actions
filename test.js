@@ -8,4 +8,3 @@ if (x) {
   console.log('some test');
 }
 
-// test
