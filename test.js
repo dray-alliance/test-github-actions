@@ -1,3 +1,4 @@
+console.log('Hello world');
 const x = false;
 const string = 'Hello World';
 
@@ -6,3 +7,5 @@ if (x) {
 } else {
   console.log('some test');
 }
+
+// test
