@@ -7,3 +7,4 @@ if (x) {
 } else {
   console.log('some test');
 }
+
