@@ -3,7 +3,7 @@ on:
   push:
     branches:
     - "release/*"  # Support wildcard matching
-    - "hotfix/*"  # Support wildcard matching
+    - "master"  # Support wildcard matching
 
 jobs:
   pull-request:
